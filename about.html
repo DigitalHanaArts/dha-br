@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre · Artes Digitais Hana®</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero { min-height: 60vh; display: flex; align-items: center; padding-top: 160px; text-align: center; background: radial-gradient(circle at center, rgba(208,255,0,.05), transparent 70%); }
+        .about-title { font-size: clamp(2.5rem, 8vw, 6rem); line-height: 1.1; margin-bottom: 24px; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 80px; }
+        .about-visual { min-height: 500px; border: 1px solid var(--border); background: var(--void-2); position: relative; overflow: hidden; }
+        .about-visual img { width: 100%; height: 100%; object-fit: contain; padding: 40px; filter: brightness(1.2); }
+        .about-text h2 { font-size: 2.5rem; margin-bottom: 24px; color: var(--acid); }
+        .about-text p { font-size: 1.1rem; line-height: 1.9; margin-bottom: 20px; color: var(--ash); }
+        .about-text strong { color: var(--bone); }
+        @media(max-width: 900px) { .about-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="brand"><img src="assets/DHA_logo_h.png" alt="DHA"><span>[DHA]</span></a>
+        <nav class="nav-links">
+            <a href="index.html">[INÍCIO]</a>
+            <a href="about.html" class="active">[SOBRE]</a>
+            <a href="works.html">[PROJETOS]</a>
+            <a href="contact.html">[CONTATO]</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <span class="section-label">// SOBRE_NÓS</span>
+                <h1 class="about-title">
+                    <span style="color:var(--bone);">Um estúdio no</span><br>
+                    <span style="color:transparent; -webkit-text-stroke:2px var(--acid); font-style:italic;">interstício.</span>
+                </h1>
+                <p style="max-width: 700px; margin: 0 auto; font-size: 1.2rem; color: var(--ash);">
+                    Somos uma oficina experimental operando na fronteira entre a tecnologia e a expressão artística.
+                </p>
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <img src="assets/DHA_logo.jpg" alt="Rede DHA">
+                    </div>
+                    <div class="about-text">
+                        <span class="section-label">01 · Filosofia</span>
+                        <h2>A tecnologia é <span style="color:transparent; -webkit-text-stroke:1px var(--acid);">matéria-prima.</span></h2>
+                        <p>Artes Digitais Hana começou como um experimento mental: se tratarmos a computação como tinta e tela, como tijolo e argamassa, o que podemos construir?</p>
+                        <p>A resposta nos levou à interseção de quatro domínios — <strong>Arte, Dados, IA e Blockchain</strong> — e, subsequentemente, à previsão inteligente de mercados.</p>
+                        <p>Não somos apenas um "estúdio de arte" nem uma "empresa de tecnologia". Estamos exatamente onde <strong>ferramenta e artefato se tornam um só.</strong></p>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <span class="section-label">02 · Antropofagia</span>
+                        <h2>Devore a cultura. Cuspa código.</h2>
+                        <p>Inspirados pelo Movimento Antropofágico brasileiro de 1928, nós devoramos as influências estrangeiras — o cyberpunk, o dadá, a inteligência artificial — e as digerimos para criar algo visceralmente nosso.</p>
+                        <p>Não fazemos apenas arte generativa. Nós nos recusamos a aceitar a dicotomia entre o técnico e o orgânico. Nosso código é tropical, nosso algoritmo tem ritmo.</p>
+                    </div>
+                    <div class="about-visual">
+                        <img src="assets/Hana_the_kitten.jpg" alt="Hana" style="object-fit: cover; padding: 0;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

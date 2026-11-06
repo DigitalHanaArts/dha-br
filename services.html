@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços · Artes Digitais Hana®</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+        .service-card { background: var(--void-2); border: 1px solid var(--border); padding: 40px 32px; position: relative; transition: all 0.3s; }
+        .service-card:hover { transform: translateY(-8px); border-color: var(--acid); box-shadow: 0 24px 60px rgba(208,255,0,0.1); }
+        .service-num { font-family: "DM Mono", monospace; font-size: 32px; color: var(--acid); margin-bottom: 16px; }
+        .service-card h3 { font-size: 1.5rem; color: var(--bone); margin-bottom: 16px; }
+        .service-card p { color: var(--ash); margin-bottom: 24px; font-size: 0.95rem; }
+        .service-list { list-style: none; padding: 0; margin-bottom: 24px; }
+        .service-list li { padding: 8px 0 8px 24px; font-family: "DM Mono", monospace; font-size: 12px; color: var(--ash); position: relative; }
+        .service-list li::before { content: "▸"; position: absolute; left: 0; color: var(--cyan); }
+        .service-price { font-family: "DM Mono", monospace; font-size: 1.2rem; color: var(--bone); padding-top: 20px; border-top: 1px solid var(--border-dark); }
+        .service-price strong { color: var(--acid); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="brand"><img src="assets/DHA_logo_h.png" alt="DHA"><span>[DHA]</span></a>
+        <nav class="nav-links">
+            <a href="index.html">[INÍCIO]</a>
+            <a href="about.html">[SOBRE]</a>
+            <a href="works.html">[PROJETOS]</a>
+            <a href="services.html" class="active">[SERVIÇOS]</a>
+            <a href="contact.html">[CONTATO]</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section" style="padding-top: 160px; text-align: center;">
+            <div class="container">
+                <span class="section-label">// SERVIÇOS_EXECUÇÃO</span>
+                <h1 class="section-title">Da Ideia à <span class="outline">Execução</span>.</h1>
+                <p class="section-intro" style="margin: 0 auto 60px;">
+                    Serviços na interseção de arte, dados e tecnologia. Projetado para artistas, startups, pesquisadores e coletivos criativos. Pagamento em <strong>Ethereum (ETH)</strong>.
+                </p>
+            </div>
+        </section>
+
+        <section class="section reveal" style="padding-top: 0;">
+            <div class="container">
+                <div class="service-grid">
+                    <!-- Serviço 1 -->
+                    <div class="service-card">
+                        <div class="service-num">01</div>
+                        <h3>IA & Aprendizado de Máquina</h3>
+                        <p>Construímos modelos que aprendem, preveem e geram.</p>
+                        <ul class="service-list">
+                            <li>Previsão de séries temporais (ex: TRX Forecast)</li>
+                            <li>Visão computacional e classificação de imagens</li>
+                            <li>Arquiteturas neurais personalizadas (ML/DL)</li>
+                        </ul>
+                        <div class="service-price">A partir de <strong>0.50 ETH</strong></div>
+                    </div>
+
+                    <!-- Serviço 2 -->
+                    <div class="service-card">
+                        <div class="service-num">02</div>
+                        <h3>Blockchain & Computação Verificável</h3>
+                        <p>Conectamos pesquisa científica à confiança descentralizada.</p>
+                        <ul class="service-list">
+                            <li>Desenvolvimento de Smart Contracts</li>
+                            <li>IA Verificável (MLabChain / CERN)</li>
+                            <li>Design de Tokenomics e DAOs</li>
+                        </ul>
+                        <div class="service-price">A partir de <strong>0.70 ETH</strong></div>
+                    </div>
+
+                    <!-- Serviço 3 -->
+                    <div class="service-card">
+                        <div class="service-num">03</div>
+                        <h3>Arte Computacional & NFTs</h3>
+                        <p>Transformamos pixels e dados em ativos digitais.</p>
+                        <ul class="service-list">
+                            <li>Sistemas de arte generativa e visualização de dados</li>
+                            <li>Criação e lançamento de coleções NFT</li>
+                            <li>Tokenização de momentos físicos (P2D)</li>
+                        </ul>
+                        <div class="service-price">A partir de <strong>0.25 ETH</strong></div>
+                    </div>
+
+                    <!-- Serviço 4 -->
+                    <div class="service-card">
+                        <div class="service-num">04</div>
+                        <h3>Consultoria Estratégica</h3>
+                        <p>Traduzimos números brutos em narrativas visuais e técnicas.</p>
+                        <ul class="service-list">
+                            <li>Painéis interativos em tempo real</li>
+                            <li>Storytelling focado em dados</li>
+                            <li>Integração de IA/Blockchain em fluxos de trabalho</li>
+                        </ul>
+                        <div class="service-price">A partir de <strong>0.05 ETH/h</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <span>© 2026 ARTES_DIGITAIS_HANA®</span>
+                <span>COMPUTAÇÃO COMO MEIO CRIATIVO</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
